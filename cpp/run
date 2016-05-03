@@ -1,0 +1,4 @@
+hadoop jar $HADOOP_INSTALL/share/hadoop/tools/lib/hadoop-streaming-2.6.4.jar \
+		   -file ./map -mapper ./map \
+		   -file ./reduce -reducer ./reduce \
+		   -input /input -output /output_cpp

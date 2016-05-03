@@ -1,0 +1,4 @@
+hadoop jar $HADOOP_INSTALL/share/hadoop/tools/lib/hadoop-streaming-2.6.4.jar \
+		   -file ./map.py -mapper ./map.py \
+		   -file ./reduce.py -reducer ./reduce.py \
+		   -input /input -output /output
